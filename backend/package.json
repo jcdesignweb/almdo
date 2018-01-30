@@ -1,0 +1,30 @@
+{
+  "name": "test-al-mundo",
+  "version": "1.0.0",
+  "description": "Test Al Mundo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://juancarmena@bitbucket.org/juancarmena/almundo.git"
+  },
+  "keywords": [
+    "Test"
+  ],
+  "author": "Juan Andres Carmena",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/juancarmena/almundo#readme",
+  "dependencies": {
+    "@types/node": "^9.3.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "simple-json-filter": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.3"
+  }
+}

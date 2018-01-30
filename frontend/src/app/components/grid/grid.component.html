@@ -1,0 +1,14 @@
+<div class="row no-padding">
+    <div class="col s12">
+        <div *ngIf="hotels?.length == 0">
+            <h1>Uuuups. No hay ningún hotel. :>(</h1>
+            <button (click)="clearFilters()">Mostrar todos.</button>
+        </div>
+
+        <div *ngFor="let hotel of hotels;">
+            <grid-cell [hotel]="hotel"></grid-cell>        
+        </div>
+    </div>
+</div>
+
+          

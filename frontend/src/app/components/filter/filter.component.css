@@ -1,0 +1,76 @@
+#filter { box-shadow: 0px 0px 6px #ccc; }
+input { background: white; border: 1px solid black !important;  }
+h2,span {
+    background: white;
+    font-size: 14px;
+    margin: 0 0 5px 0;
+    padding: 15px;
+}
+
+h2 { color: #444; font-weight: bold; font-size: 16px; }
+
+svg { position: relative; top: 3px; }
+
+.glass { width: 20px; }
+
+.search { background: white; padding: 15px 15px 0 15px; }
+.search-form { overflow: hidden; padding-bottom: 10px; }
+.search-form input { height:30px; margin-top: 15px; padding: 0 5px; margin-bottom: 0; }
+
+.t1 { cursor: pointer; }
+.t1 label { font-size: 16px; }
+.t1 button {  }
+
+
+.title { color: #0679b3; }
+.title svg { fill: #0679b3; }
+
+.categories { background: white; padding: 8px 15px; margin:5px 0 0 0; }
+
+#filter .open { height: auto; }
+
+.arrow { 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    height: 0px;
+    margin: 5px;
+    width: 0px;
+    position: relative;
+}
+.arrow.down { border-top: 8px solid #104183; }
+.arrow.up { border-bottom: 8px solid #104183; }
+.categories .arrow { top: 5px; }
+a { 
+    background: white;
+    font-size: 14px;
+    padding: 15px;
+    margin: 0 0 10px 0;
+    text-align: center; 
+    color:#104183; 
+    font-weight: bold; 
+}
+a .arrow { position: relative; top: 12px; }
+
+.stars p { margin-top: 15px; }
+
+.star-all { color: #444; font-size: 14px !important; }
+
+
+span.mobile { cursor: pointer; text-align: center; color: #0679b3; font-size: 18px; font-weight: bold; display: block; }
+span.mobile i { position: relative; top: 12px; vertical-align: middle; }
+span.mobile i.up { top: -15px; }
+
+.inputs { margin: 15px 0; }
+.inputs button { border-radius: 2px; padding: 9px 5%; width: 100%; min-width: 80px; max-width: 110px; height: 37px;  }
+.inputs input { height: 35px; }
+.inputs input, .inputs button { margin-top: 0; }
+
+
+@media only screen and (max-width: 990px) {
+    .filter-content { overflow: hidden; }
+    .filter-content h2 { text-align: center; }
+
+    #filter .close { height: 50px; }
+    .filter { padding: 0; }
+
+}

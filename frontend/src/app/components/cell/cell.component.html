@@ -1,0 +1,35 @@
+<div class="row cell">
+  <div class="col s12 l12 desc">
+    <div class="row" style="margin-bottom:0">
+      <div class="col s12 m8 l9 no-padding">
+        <img class="left hotel-img" src="/assets/images/hotels/{{hotel.getImage()}}" alt="Hotel: {{hotel.getName()}}" width="325" />
+        <div class="left">
+            <a href="">{{hotel.getName()}}</a>
+            <div class="row">
+              <div class="stars">
+                <star [total]="hotel.stars"></star>
+              </div>
+              <div class="amenities">
+                <ul>
+                  <li *ngFor="let amenity of hotel.amenities;">
+                    <i><img src="./assets/icons/amenities/{{amenity}}.svg" width="25" height="25" /></i>
+                  </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col s12 m4 l3 no-padding" >
+        <div class="detail-price">
+          <div class="row">
+              <label>Precio por noche por habitación</label>  
+          </div>
+          <div class="row"><span class="price">ARS <b>{{hotel.getPrice()}}</b></span></div>
+          <div class="row"><button class="col s12"> Ver Hotel</button></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
